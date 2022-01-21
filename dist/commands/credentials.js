@@ -16,10 +16,9 @@ function credentials(message, client) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             if (message.isGroupMsg) {
-                console.log(message);
                 if (yield (0, isAdmin_1.isAdmin)(client, message.from, message.author)) {
                     const credential = { group: message.from, pass: (0, randPass_1.randPass)(6) };
-                    client.sendText(message.sender.id, `Aqui estão os dados de autenticação do grupo: *${message.chat.contact.name}* \n\nGrupo: ${credential.group} \nSenha: ${credential.pass} \nVocê pode logar no painel do grupo pela seguinte url: \nhttps://www.google.com.br/`);
+                    client.sendText(message.sender.id, `Aqui estão os dados de autenticação do grupo: *${message.chat.contact.name}* \n\nGrupo: ${credential.group} \nSenha: ${credential.pass} \n\nVocê pode logar no painel do grupo pela seguinte url: \nhttps://www.google.com.br/`);
                 }
             }
         }
