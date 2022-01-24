@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/GuAugLop/pokebot#readme",
   "dependencies": {
+    "axios": "^0.25.0",
     "express": "^4.17.2",
     "nodemon": "^2.0.15",
     "venom-bot": "^4.0.5"
